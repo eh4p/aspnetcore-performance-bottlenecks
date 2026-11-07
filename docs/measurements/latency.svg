@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="640" viewBox="0 0 1024 640" role="img" aria-labelledby="title desc">
+<title id="title">Measured p95 latency at concurrency 30</title>
+<desc id="desc">Median of three run-level p95 latencies, 240 measured requests and 30 warmup requests per run. Each of the four scenario panels uses its own linear millisecond scale. Values are derived from local-runs.csv.</desc>
+<rect width="1024" height="640" fill="#f4f7fa"/>
+<g font-family="system-ui, sans-serif" fill="#17263a">
+<text x="24" y="37" font-size="24" font-weight="700">Measured p95 latency at concurrency 30</text>
+<text x="24" y="66" font-size="15">Median of 3 runs · 240 requests/run · 30 warmup requests · lower is better</text>
+<rect x="24" y="82" width="13" height="13" fill="#b13d31"/><text x="44" y="94" font-size="14">Violation</text>
+<rect x="150" y="82" width="13" height="13" fill="#167668"/><text x="170" y="94" font-size="14">Solution</text>
+<rect x="24" y="116" width="476" height="208" rx="10" fill="white" stroke="#d6dfe8"/>
+<text x="40" y="146" font-size="19" font-weight="650">Blocking I/O</text>
+<text x="40" y="169" font-size="13" fill="#536277">Panel scale: 0–152.3 ms</text>
+<text x="40" y="211" font-size="14">Violation</text>
+<rect x="124" y="190" width="250.000" height="30" rx="3" fill="#b13d31"><title>violation: 135.959 ms</title></rect>
+<text x="480" y="211" font-size="14" text-anchor="end">135.959 ms</text>
+<text x="40" y="262" font-size="14">Solution</text>
+<rect x="124" y="241" width="238.469" height="30" rx="3" fill="#167668"><title>solution: 129.688 ms</title></rect>
+<text x="480" y="262" font-size="14" text-anchor="end">129.688 ms</text>
+<line x1="124" y1="300" x2="404" y2="300" stroke="#b7c4d0"/>
+<text x="124" y="316" font-size="11">0</text>
+<text x="404" y="316" font-size="11" text-anchor="end">152.3 ms</text>
+<rect x="524" y="116" width="476" height="208" rx="10" fill="white" stroke="#d6dfe8"/>
+<text x="540" y="146" font-size="19" font-weight="650">N+1 SQL queries</text>
+<text x="540" y="169" font-size="13" fill="#536277">Panel scale: 0–101.3 ms</text>
+<text x="540" y="211" font-size="14">Violation</text>
+<rect x="624" y="190" width="250.000" height="30" rx="3" fill="#b13d31"><title>violation: 90.488 ms</title></rect>
+<text x="980" y="211" font-size="14" text-anchor="end">90.488 ms</text>
+<text x="540" y="262" font-size="14">Solution</text>
+<rect x="624" y="241" width="143.038" height="30" rx="3" fill="#167668"><title>solution: 51.773 ms</title></rect>
+<text x="980" y="262" font-size="14" text-anchor="end">51.773 ms</text>
+<line x1="624" y1="300" x2="904" y2="300" stroke="#b7c4d0"/>
+<text x="624" y="316" font-size="11">0</text>
+<text x="904" y="316" font-size="11" text-anchor="end">101.3 ms</text>
+<rect x="24" y="340" width="476" height="208" rx="10" fill="white" stroke="#d6dfe8"/>
+<text x="40" y="370" font-size="19" font-weight="650">Lock scope</text>
+<text x="40" y="393" font-size="13" fill="#536277">Panel scale: 0–2704.2 ms</text>
+<text x="40" y="435" font-size="14">Violation</text>
+<rect x="124" y="414" width="250.000" height="30" rx="3" fill="#b13d31"><title>violation: 2414.447 ms</title></rect>
+<text x="480" y="435" font-size="14" text-anchor="end">2414.447 ms</text>
+<text x="40" y="486" font-size="14">Solution</text>
+<rect x="124" y="465" width="15.844" height="30" rx="3" fill="#167668"><title>solution: 153.022 ms</title></rect>
+<text x="480" y="486" font-size="14" text-anchor="end">153.022 ms</text>
+<line x1="124" y1="524" x2="404" y2="524" stroke="#b7c4d0"/>
+<text x="124" y="540" font-size="11">0</text>
+<text x="404" y="540" font-size="11" text-anchor="end">2704.2 ms</text>
+<rect x="524" y="340" width="476" height="208" rx="10" fill="white" stroke="#d6dfe8"/>
+<text x="540" y="370" font-size="19" font-weight="650">CPU algorithm</text>
+<text x="540" y="393" font-size="13" fill="#536277">Panel scale: 0–182.5 ms</text>
+<text x="540" y="435" font-size="14">Violation</text>
+<rect x="624" y="414" width="250.000" height="30" rx="3" fill="#b13d31"><title>violation: 162.956 ms</title></rect>
+<text x="980" y="435" font-size="14" text-anchor="end">162.956 ms</text>
+<text x="540" y="486" font-size="14">Solution</text>
+<rect x="624" y="465" width="12.764" height="30" rx="3" fill="#167668"><title>solution: 8.320 ms</title></rect>
+<text x="980" y="486" font-size="14" text-anchor="end">8.320 ms</text>
+<line x1="624" y1="524" x2="904" y2="524" stroke="#b7c4d0"/>
+<text x="624" y="540" font-size="11">0</text>
+<text x="904" y="540" font-size="11" text-anchor="end">182.5 ms</text>
+<text x="24" y="590" font-size="14">Each panel has its own linear scale. Compare paired bars within a panel.</text>
+<text x="24" y="615" font-size="13" fill="#536277">Observed 2026-11-02 · .NET 10.0.14 · i7-6700HQ · local PostgreSQL 18.3 · raw CSV included</text>
+</g></svg>

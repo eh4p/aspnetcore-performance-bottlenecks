@@ -1,0 +1,3 @@
+utc,scenario,variant,distribution,concurrency,requests,warmup,completed,success,failures,non2xx,timeouts,exceptions,cancelled,unstarted,elapsed_s,successful_rps,p50_ms,p95_ms,p99_ms,sql_mean,lock_wait_mean_ms,lock_wait_p95_ms,operations_mean
+2026-11-02T10:47:59.4821983+00:00,lock-contention,violation,account-1,10,40,10,40,40,0,0,0,0,0,0,3.2172515,12.43297267869795,802.0094,803.7208,803.8916,,631.1925,722.556,
+2026-11-02T10:48:03.8823674+00:00,lock-contention,solution,account-1,10,40,10,40,40,0,0,0,0,0,0,3.2150854,12.44134914736635,802.2464,804.1813,804.3715,,631.155975,723.086,
